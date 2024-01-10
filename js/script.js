@@ -43,11 +43,11 @@ startButton.addEventListener ("click", function() {
     for ( i=1 ; i <= totalCells ; i++) {
         
         //inserisco la funzione che genera una singola griglia
-        const cell = generateGrid(rows, cols);
-
+        const cell = generateGrid(i);
+        
         //inserisco la classe che definisce la dimensione delle celle
         cell.className += cellSize
-
+        
         //inserisco l'event listener che mi permette di applicare uno sfondo quando clicco
         cell.addEventListener("click", function() {
             cell.classList.toggle("clicked");

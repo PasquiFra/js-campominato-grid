@@ -52,6 +52,12 @@ main {
 
 .cell {
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: azure;
     border: 1px solid black;
 }
 
