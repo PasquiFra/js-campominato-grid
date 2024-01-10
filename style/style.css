@@ -20,20 +20,39 @@ header {
 
 main {
     background-color: lightgray;
+    display: flex;
+    justify-content: center;
+
 }
 
 #grid {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
     height: 500px;
     width: 500px;
-
+    
     padding: 30px;
+}
+
+.cells-easy {
+    width: calc(100% / var(--cells-easy));
+    height: calc(100% / var(--cells-easy));
+}
+.cells-medium {
+    width: calc(100% / var(--cells-medium));
+    height: calc(100% / var(--cells-medium));
+}
+.cells-hard {
+    width: calc(100% / var(--cells-hard));
+    height: calc(100% / var(--cells-hard));
 }
 
 .cell {
     cursor: pointer;
-    width: calc(100% / var(--cells-hard));
-    height: calc(100% / var(--cells-hard));
-    border: 1px solid red;
+    border: 1px solid black;
 }
 
 .cell.clicked {
