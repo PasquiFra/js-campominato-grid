@@ -21,7 +21,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
         <!-- Style.css -->
-        <link rel="stylesheet" href="./style.css/style.css">
+        <link rel="stylesheet" href="./style/style.css">
 
         <!--! Javascript -->
         <script src="./js/functions.js"></script>
@@ -29,21 +29,32 @@
     </head>
     
 <body>
+    <div class="container-flex">
+        
+        <header>
+            <h1 class="w-50 d-flex align-self-center">Campo minato</h1>
+            <div class="input-group mx-2 w-50">
+                <span class="input-group-text" id="difficulty-choice">Scegli la difficoltà: </span>
+                <select id="difficulty" class="form-select">
+                    <option value="easy">Facile</option>
+                    <option value="medium">Intermedio</option>
+                    <option value="hard" selected>Esperto</option>
+                </select>
+                <button id="start" class="btn btn-primary mx-2 rounded" type="button">Inizia la sfida!</button>
+            </div>
+        </header>
 
-    <div class="m-3">
-        <h5>Campo minato</h5>
-        <div class="input-group my-3">
-            <span class="input-group-text" id="user-choice">Scegli la difficoltà: </span>
-            <select id="difficulty" class="form-select">
-                <option value="easy" selected>Facile</option>
-                <option value="medium">Intermedio</option>
-                <option value="hard">Esperto</option>
-            </select>
-        </div>
+        <main>
 
-        <button id="send" class="btn btn-primary my-2 rounded" type="button">Sfida il PC!</button>
+            <section id="grid">
+
+                <div class="cell clicked"></div>
+
+            </section>
+
+        </main>
+
     </div>
-
 </body>
 
 
