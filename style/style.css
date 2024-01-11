@@ -2,9 +2,7 @@
 
 /* Funzionalità di centralizzazione tramite :root */
 :root {
-    --cells-easy: 7;
-    --cells-medium: 9;
-    --cells-hard: 10;
+    --cols-per-row: 7;
 }
 
 
@@ -37,20 +35,10 @@ main {
     padding: 30px;
 }
 
-.cells-easy {
-    width: calc(100% / var(--cells-easy));
-    height: calc(100% / var(--cells-easy));
-}
-.cells-medium {
-    width: calc(100% / var(--cells-medium));
-    height: calc(100% / var(--cells-medium));
-}
-.cells-hard {
-    width: calc(100% / var(--cells-hard));
-    height: calc(100% / var(--cells-hard));
-}
-
 .cell {
+    width: calc(100% / var(--cols-per-row));
+    height: calc(100% / var(--cols-per-row));
+
     cursor: pointer;
 
     display: flex;
