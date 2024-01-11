@@ -15,6 +15,7 @@ startButton.addEventListener ("click", function() {
     //se avevo già cliccato il bottone svuoto il contenuto precedentemente inserito
     grid.innerHTML = "";
     cellsNum = "";
+    startButton.innerHTML = "Ricomincia"
     
     console.log("cliccato");
     
@@ -50,8 +51,13 @@ startButton.addEventListener ("click", function() {
         
         //inserisco l'event listener che mi permette di applicare uno sfondo quando clicco
         cell.addEventListener("click", function() {
+
             cell.classList.toggle("clicked");
+            console.log(cell.innerText)
+            console.log(i)
+
         })
+        
         
         // inserisco la singola griglia nel documento
         grid.appendChild(cell);
